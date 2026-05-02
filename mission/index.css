@@ -69,3 +69,8 @@ hr {
 #doesby {
     font-style: italic;
 }
+
+#theme-select {
+    position: absolute;
+    top: 20px;
+}
