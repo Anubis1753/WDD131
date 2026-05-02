@@ -13,6 +13,7 @@ function changeTheme() {
         document.body.style.color = "white"
     } else {
         document.body.style.backgroundColor = "White";
+        document.body.style.color = "black";
     }
 }
           
