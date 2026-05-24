@@ -1,0 +1,143 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+header {
+    text-align: center;
+    padding-top: 1.5rem;
+    width: 100%;
+}
+
+h1 {
+    color: black;
+    margin: 0 0 1.5rem 0;
+}
+
+nav {
+    width: 100%; 
+    border-top: 0.2rem solid yellow;     
+    border-bottom: 0.2rem solid yellow;  
+    padding: 0.75rem 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    gap: 2rem;
+    color: darkred;
+}
+
+nav a {
+    text-decoration: none;
+    color: darkred;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding-inline: 0 1rem;
+}
+
+.book-review {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.meta-info {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-size: 0.85rem;
+    color: black;
+    line-height: 1.6;
+    margin-top: 1rem;
+    border-top: 0.2rem solid yellow;
+}
+
+h2 {
+    color: darkred;
+    margin-top: 0;
+    padding-left: 2rem;
+}
+
+img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+    padding-left: 8rem;
+}
+
+p {
+    padding-left: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    border-top: .2rem solid yellow;
+    font-size: 0.9rem;
+    margin-top: 4rem;
+}
+
+@media (min-width: 780px) {
+
+    nav {
+        color: darkred;
+        
+    }
+
+    ul {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end; 
+        padding-right: 0;
+    }
+
+    header {
+        margin: 0 auto;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 0 0 1.5rem 0;
+    }
+
+    .book-review {
+        margin: 2rem auto;
+        padding: 0 1rem;
+        grid-template-columns: 200px 1fr;
+        gap: 3rem;
+        align-items: start;
+        
+    }
+
+    img {
+        margin-left: 12rem;
+    }
+
+    .about-book {
+        padding-left: 2rem;
+        border-left: .2rem solid yellow;
+    }
+
+    .meta-info {
+        text-align: right;
+        border: none;
+    }
+
+    footer {
+        margin: 2rem auto 0 auto;
+    }
+}
