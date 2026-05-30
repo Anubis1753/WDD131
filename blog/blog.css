@@ -86,6 +86,7 @@ footer {
     text-align: center;
     padding: 1rem 0;
     border-top: .2rem solid yellow;
+    border-bottom: .2rem solid yellow;
     font-size: 0.9rem;
     margin-top: 4rem;
 }
