@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Card Project</title>
+    
+    <link rel="stylesheet" href="charactercard.css">
+    <script src="charactercard.js" defer></script>
+    
+    <meta name="description" content="A character card interactive project.">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Character Card">
+    <meta property="og:description" content="Interactive character card project.">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="cosmicHorror.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Character Card">
+    <meta name="twitter:description" content="Interactive character card.">
+    <meta name="twitter:image" content="cosmicHorror.png">
+
+</head>
+<body>
+    <div class="card">
+        <img id="character-image" class="image" src="cosmicHorror.png" alt="Character Image">
+        <div id="character-name" class="name"></div>
+        
+        <div class="stats">
+            <p><strong>Class:</strong> <span id="character-class"></span></p>
+            <p><strong>Level:</strong> <span id="character-level"></span></p>
+            <p><strong>Health:</strong> <span id="character-health"></span></p>
+        </div>
+        
+        <div class="buttons">
+            <button id="attack-btn">Attack</button>
+            <button id="level-btn">Level Up</button>
+        </div>
+    </div>
+</body>
+</html>
