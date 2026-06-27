@@ -358,4 +358,11 @@ function init() {
   });
 }
 
+function init() {
+  let randomIndex = Math.floor(Math.random() * recipes.length);
+  let randomRecipe = recipes[randomIndex];
+  
+  renderRecipe(randomRecipe);
+}
+
 init();
