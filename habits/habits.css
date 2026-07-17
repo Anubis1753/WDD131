@@ -34,3 +34,13 @@ body {
     margin-top: 20px; 
     cursor: pointer; 
 }
+
+@media (min-width: 700) {
+    body {
+        padding: 40px;
+    }
+
+    #searchInput, .habit-card {
+        max-width: 600px;
+    }
+}
