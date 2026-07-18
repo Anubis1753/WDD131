@@ -1,6 +1,5 @@
 let habits = [
-    { id: 1, name: "Do the Dishes", points: 50 },
-    { id: 2, name: "Do Homework", points: 500 }
+    
 ];
 let totalPoints = 0;
 
