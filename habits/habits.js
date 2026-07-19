@@ -7,7 +7,7 @@ function habitTemplate(habit) {
     return `
     <div class="habit-card">
         <span>${habit.name}: ${habit.points}pts</span>
-        <button onclick="completeHabit(${habit.id})">Done</button>
+        <button data-id="${habit.id}">Done</button>
     </div>`;
 }
 
@@ -22,7 +22,16 @@ function renderHabits(filter = "") {
     filteredHabits.forEach(habit => {
         container.innerHTML += habitTemplate(habit);
     });
+
+    const buttons = container.querySelectorAll("button");
+    buttons.forEach(button => {
+        button.addEventListener("click", (e) => {
+            const id = parseInt(e.target.getAttribute("data-id"));
+            completeHabit(id);
+        });
+    });
 }
+
 function completeHabit(id) {
     const habit = habits.find(h => h.id === id);
     if (habit) {
